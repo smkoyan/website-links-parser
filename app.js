@@ -31,7 +31,6 @@ const parseWebsites = websites => {
 }
 
 const parseWebsite = async (url, maxDepth = Infinity, depth = 1) => {
-    console.log(depth, maxDepth)
     if (depth > maxDepth) {
         console.log('maximum depth limit exceeded, no more parsing');
         return;
